@@ -61,7 +61,7 @@ hist(result)
 hist(resultalt)
 ```
 
-Comments:
+Comments: The fun1alt runs much faster than fun1, 17.426 min compared to 333.091. The histogram also show that the curve has shifted to the left, with more frequent faster runs.
 
 2.  This function finds the maximum value of each column of a matrix (hint: check out the `max.col()` function).
 
@@ -97,6 +97,8 @@ dim(result2alt)
 hist(result2)
 hist(result2alt)
 ```
+
+Despite the histograms being very similar, the fun2alt runs much faster than the fun2, 39.589 compared to 1000.654.
 
 ## **Problem 3: Parallelization**
 
@@ -166,3 +168,5 @@ system.time(my_boot(dat = data.frame(x, y), my_stat, R = 4000, ncpus = 1L))
 system.time(my_boot(dat = data.frame(x, y), my_stat, R = 4000, ncpus = 2L))
 
 ```
+
+Here we can see than the 2L core is faster than the 1L core.
